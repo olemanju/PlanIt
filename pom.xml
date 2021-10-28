@@ -99,6 +99,23 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.22.1</version>
+          <configuration>
+                <testFailureIgnore>true</testFailureIgnore>
+					<suiteXmlFiles>
+					<suiteXmlFile>${basedir}\src\test\resources\testsuite\NewFile.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<systemProperties>
+					    <property>
+					        	<name>browser.NAME</name>
+					        	<value>${browser.NAME}</value>
+                        </property>
+						<property>
+					        	<name>url</name>
+					        	<value>${project.url}</value>
+                        </property>
+                	</systemProperties>         	            		 	
+		<forkMode>never</forkMode>
+            </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
