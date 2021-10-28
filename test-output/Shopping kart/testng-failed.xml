@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Shopping kart]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.plan.Listeners.TestListener"/>
+    <listener class-name="com.plan.Listeners.AnnotationTransformer"/>
+  </listeners>
+  <test name="Smoke Test(failed)">
+    <parameter name="browserType" value="GC"/>
+    <classes>
+      <class name="com.plan.test.LoginPageTest">
+        <methods>
+          <include name="verifyEndtoEndFlowForErrorAndSuccessForSubmition" invocation-numbers="0 0"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.plan.test.LoginPageTest -->
+    </classes>
+  </test> <!-- Smoke Test(failed) -->
+</suite> <!-- Failed suite [Shopping kart] -->

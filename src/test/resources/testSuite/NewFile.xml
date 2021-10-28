@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name= "Shopping kart">
+     
+<listeners>
+        <listener class-name="com.plan.Listeners.TestListener"/>
+        <listener class-name="com.plan.Listeners.AnnotationTransformer"/>
+    </listeners>
+    
+     
+        <test name="Smoke Test" preserve-order="true">
+            
+              <parameter name="browserType" value="GC"/> 
+                 <classes>
+                <class name="com.plan.test.LoginPageTest"/>
+                     <!--
+                <methods>
+                    <include  name="verifyInvalidLoginFunctionality"/>
+                </methods>
+               
+                </class>
+                 -->
+            </classes>
+            
+        </test>
+</suite>
