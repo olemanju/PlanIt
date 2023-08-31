@@ -40,10 +40,16 @@ public class BaseTestObject {
 
 	public WebDriver driver;
 
-	public static String propertyFilePath = System.getProperty("user.dir")
-			+ "\\src\\test\\resources\\testdata\\data.properties";
-	public static String chromeDriverPath = System.getProperty("user.dir")
-			+ "\\src\\test\\resources\\drivers\\95\\chromedriver.exe";
+	//public static String propertyFilePath = System.getProperty("user.dir")
+		//	+ "\\src\\test\\resources\\testdata\\data.properties";
+	public static String propertyFilePath = "/Users/mnajunatharamaswamy/JavaWorkSpace/PlanItProject/PlanIt/src/test/resources/testData/data.properties";
+
+	//public static String chromeDriverPath = System.getProperty("user.dir")
+			//+ "\\src\\test\\resources\\drivers\\95\\chromedriver";
+
+	public static String chromeDriverPath = "/Users/mnajunatharamaswamy/JavaWorkSpace/PlanItProject/PlanIt/src/test/resources/drivers/95/chromedriver";
+
+
 	public static String IEDriverPath = System.getProperty("user.dir")
 			+ "\\src\\test\\resources\\drivers\\IE\\IEDriverServer.exe";
 	public static String geckoDriverPath = System.getProperty("user.dir")

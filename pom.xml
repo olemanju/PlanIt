@@ -57,11 +57,7 @@
 			<version>1.2.17</version>
 		</dependency>
 		
-	<dependency>
-    <groupId>com.pojosontheweb</groupId>
-    <artifactId>monte-repack</artifactId>
-    <version>1.0.1</version>
-</dependency>
+
 
 <dependency>
     <groupId>org.apache.directory.studio</groupId>
