@@ -102,7 +102,7 @@ public class BaseTestObject {
 	 * 
 	 * This function will execute before each Test tag in testng.xml
 	 * 
-	 * @param browser
+
 	 * 
 	 * @throws Exception
 	 * 
@@ -120,7 +120,7 @@ public class BaseTestObject {
 
 			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--headless");
+			//options.addArguments("--headless");
 			 driver = new ChromeDriver(options);
 
 			//driver = new ChromeDriver();
