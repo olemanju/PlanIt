@@ -120,7 +120,7 @@ public class BaseTestObject {
 
 			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--headless");
+			//options.addArguments("--headless");
 			 driver = new ChromeDriver(options);
 
 			//driver = new ChromeDriver();
