@@ -1,0 +1,36 @@
+pipeline{
+agent any
+ tools {
+        maven "mvn"
+    }
+        stages
+    {
+    stage('Build')
+        {
+        steps{
+        echo "Building the Code.........."
+        sh 'mvn clean install'
+        }
+        }
+        stage('Test')
+        {
+        steps{
+            echo "Testing the Code.........."
+            sh 'mvn clean test -DsuiteXmlFile=NewFile.xml'
+            }
+            }
+stage('Compile')
+{
+steps{
+echo "Compiling the Project.........."
+sh 'mvn compile'
+}
+}
+stage('Deploy')
+{
+steps{
+echo "Deploying the Project.........."
+}
+}
+}
+}
